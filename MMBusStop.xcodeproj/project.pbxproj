@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5D6CDCD180480C4009AF9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDCC180480C4009AF9B8 /* Foundation.framework */; };
+		E5D6CDCF180480C4009AF9B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDCE180480C4009AF9B8 /* CoreGraphics.framework */; };
+		E5D6CDD1180480C4009AF9B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDD0180480C4009AF9B8 /* UIKit.framework */; };
+		E5D6CDD7180480C4009AF9B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CDD5180480C4009AF9B8 /* InfoPlist.strings */; };
+		E5D6CDD9180480C4009AF9B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CDD8180480C4009AF9B8 /* main.m */; };
+		E5D6CDDD180480C4009AF9B8 /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CDDC180480C4009AF9B8 /* MMAppDelegate.m */; };
+		E5D6CDE0180480C4009AF9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CDDE180480C4009AF9B8 /* Main.storyboard */; };
+		E5D6CDE3180480C4009AF9B8 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CDE2180480C4009AF9B8 /* MMViewController.m */; };
+		E5D6CDE5180480C4009AF9B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CDE4180480C4009AF9B8 /* Images.xcassets */; };
+		E5D6CDEC180480C4009AF9B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDEB180480C4009AF9B8 /* XCTest.framework */; };
+		E5D6CDED180480C4009AF9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDCC180480C4009AF9B8 /* Foundation.framework */; };
+		E5D6CDEE180480C4009AF9B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CDD0180480C4009AF9B8 /* UIKit.framework */; };
+		E5D6CDF6180480C4009AF9B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CDF4180480C4009AF9B8 /* InfoPlist.strings */; };
+		E5D6CDF8180480C4009AF9B8 /* MMBusStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CDF7180480C4009AF9B8 /* MMBusStopTests.m */; };
+		E5D6CE02180480E4009AF9B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CE01180480E4009AF9B8 /* CoreLocation.framework */; };
+		E5D6CE04180480EB009AF9B8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6CE03180480EB009AF9B8 /* MapKit.framework */; };
+		E5D6CE0918049BD4009AF9B8 /* cta25x25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CE0818049BD4009AF9B8 /* cta25x25@2x.png */; };
+		E5D6CE0C1804A272009AF9B8 /* MMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CE0B1804A272009AF9B8 /* MMDetailViewController.m */; };
+		E5D6CE0E1804A5A4009AF9B8 /* cta100x100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CE0D1804A5A4009AF9B8 /* cta100x100@2x.png */; };
+		E5D6CE111804AD5C009AF9B8 /* MMCustomPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CE101804AD5C009AF9B8 /* MMCustomPointAnnotation.m */; };
+		E5D6CE131804C550009AF9B8 /* cta25x25Green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CE121804C550009AF9B8 /* cta25x25Green@2x.png */; };
+		E5D6CE18180509F3009AF9B8 /* cta25x25BW@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CE17180509F3009AF9B8 /* cta25x25BW@2x.png */; };
+		E5D6CEF71806169D009AF9B8 /* cloudy100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CEF31806169D009AF9B8 /* cloudy100@2x.png */; };
+		E5D6CEF81806169D009AF9B8 /* rainy100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CEF41806169D009AF9B8 /* rainy100@2x.png */; };
+		E5D6CEF91806169D009AF9B8 /* sunny100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CEF51806169D009AF9B8 /* sunny100@2x.png */; };
+		E5D6CEFA1806169D009AF9B8 /* windy100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CEF61806169D009AF9B8 /* windy100@2x.png */; };
+		E5D6CEFD18061C1A009AF9B8 /* UIImage+WeatherIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6CEFC18061C1A009AF9B8 /* UIImage+WeatherIcon.m */; };
+		E5D6CEFF18062C52009AF9B8 /* cloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = E5D6CEFE18062C52009AF9B8 /* cloud1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5D6CDEF180480C4009AF9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5D6CDC1180480C4009AF9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5D6CDC8180480C4009AF9B8;
+			remoteInfo = MMBusStop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5D6CDC9180480C4009AF9B8 /* MMBusStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMBusStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D6CDCC180480C4009AF9B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E5D6CDCE180480C4009AF9B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E5D6CDD0180480C4009AF9B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E5D6CDD4180480C4009AF9B8 /* MMBusStop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMBusStop-Info.plist"; sourceTree = "<group>"; };
+		E5D6CDD6180480C4009AF9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E5D6CDD8180480C4009AF9B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5D6CDDA180480C4009AF9B8 /* MMBusStop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMBusStop-Prefix.pch"; sourceTree = "<group>"; };
+		E5D6CDDB180480C4009AF9B8 /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		E5D6CDDC180480C4009AF9B8 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
+		E5D6CDDF180480C4009AF9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5D6CDE1180480C4009AF9B8 /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
+		E5D6CDE2180480C4009AF9B8 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		E5D6CDE4180480C4009AF9B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E5D6CDEA180480C4009AF9B8 /* MMBusStopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMBusStopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D6CDEB180480C4009AF9B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E5D6CDF3180480C4009AF9B8 /* MMBusStopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMBusStopTests-Info.plist"; sourceTree = "<group>"; };
+		E5D6CDF5180480C4009AF9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E5D6CDF7180480C4009AF9B8 /* MMBusStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBusStopTests.m; sourceTree = "<group>"; };
+		E5D6CE01180480E4009AF9B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E5D6CE03180480EB009AF9B8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E5D6CE0818049BD4009AF9B8 /* cta25x25@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cta25x25@2x.png"; sourceTree = "<group>"; };
+		E5D6CE0A1804A272009AF9B8 /* MMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDetailViewController.h; sourceTree = "<group>"; };
+		E5D6CE0B1804A272009AF9B8 /* MMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDetailViewController.m; sourceTree = "<group>"; };
+		E5D6CE0D1804A5A4009AF9B8 /* cta100x100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cta100x100@2x.png"; sourceTree = "<group>"; };
+		E5D6CE0F1804AD5C009AF9B8 /* MMCustomPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCustomPointAnnotation.h; sourceTree = "<group>"; };
+		E5D6CE101804AD5C009AF9B8 /* MMCustomPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCustomPointAnnotation.m; sourceTree = "<group>"; };
+		E5D6CE121804C550009AF9B8 /* cta25x25Green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cta25x25Green@2x.png"; sourceTree = "<group>"; };
+		E5D6CE17180509F3009AF9B8 /* cta25x25BW@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cta25x25BW@2x.png"; sourceTree = "<group>"; };
+		E5D6CEF31806169D009AF9B8 /* cloudy100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudy100@2x.png"; sourceTree = "<group>"; };
+		E5D6CEF41806169D009AF9B8 /* rainy100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rainy100@2x.png"; sourceTree = "<group>"; };
+		E5D6CEF51806169D009AF9B8 /* sunny100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sunny100@2x.png"; sourceTree = "<group>"; };
+		E5D6CEF61806169D009AF9B8 /* windy100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "windy100@2x.png"; sourceTree = "<group>"; };
+		E5D6CEFB18061C1A009AF9B8 /* UIImage+WeatherIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WeatherIcon.h"; sourceTree = "<group>"; };
+		E5D6CEFC18061C1A009AF9B8 /* UIImage+WeatherIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WeatherIcon.m"; sourceTree = "<group>"; };
+		E5D6CEFE18062C52009AF9B8 /* cloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5D6CDC6180480C4009AF9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CE04180480EB009AF9B8 /* MapKit.framework in Frameworks */,
+				E5D6CE02180480E4009AF9B8 /* CoreLocation.framework in Frameworks */,
+				E5D6CDCF180480C4009AF9B8 /* CoreGraphics.framework in Frameworks */,
+				E5D6CDD1180480C4009AF9B8 /* UIKit.framework in Frameworks */,
+				E5D6CDCD180480C4009AF9B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D6CDE7180480C4009AF9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CDEC180480C4009AF9B8 /* XCTest.framework in Frameworks */,
+				E5D6CDEE180480C4009AF9B8 /* UIKit.framework in Frameworks */,
+				E5D6CDED180480C4009AF9B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5D6CDC0180480C4009AF9B8 = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDD2180480C4009AF9B8 /* MMBusStop */,
+				E5D6CDF1180480C4009AF9B8 /* MMBusStopTests */,
+				E5D6CDCB180480C4009AF9B8 /* Frameworks */,
+				E5D6CDCA180480C4009AF9B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5D6CDCA180480C4009AF9B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDC9180480C4009AF9B8 /* MMBusStop.app */,
+				E5D6CDEA180480C4009AF9B8 /* MMBusStopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5D6CDCB180480C4009AF9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CE03180480EB009AF9B8 /* MapKit.framework */,
+				E5D6CE01180480E4009AF9B8 /* CoreLocation.framework */,
+				E5D6CDCC180480C4009AF9B8 /* Foundation.framework */,
+				E5D6CDCE180480C4009AF9B8 /* CoreGraphics.framework */,
+				E5D6CDD0180480C4009AF9B8 /* UIKit.framework */,
+				E5D6CDEB180480C4009AF9B8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5D6CDD2180480C4009AF9B8 /* MMBusStop */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDDB180480C4009AF9B8 /* MMAppDelegate.h */,
+				E5D6CDDC180480C4009AF9B8 /* MMAppDelegate.m */,
+				E5D6CDDE180480C4009AF9B8 /* Main.storyboard */,
+				E5D6CDE1180480C4009AF9B8 /* MMViewController.h */,
+				E5D6CDE2180480C4009AF9B8 /* MMViewController.m */,
+				E5D6CE0A1804A272009AF9B8 /* MMDetailViewController.h */,
+				E5D6CE0B1804A272009AF9B8 /* MMDetailViewController.m */,
+				E5D6CE0F1804AD5C009AF9B8 /* MMCustomPointAnnotation.h */,
+				E5D6CE101804AD5C009AF9B8 /* MMCustomPointAnnotation.m */,
+				E5D6CEFB18061C1A009AF9B8 /* UIImage+WeatherIcon.h */,
+				E5D6CEFC18061C1A009AF9B8 /* UIImage+WeatherIcon.m */,
+				E5D6CEFE18062C52009AF9B8 /* cloud1.png */,
+				E5D6CEF31806169D009AF9B8 /* cloudy100@2x.png */,
+				E5D6CEF41806169D009AF9B8 /* rainy100@2x.png */,
+				E5D6CEF51806169D009AF9B8 /* sunny100@2x.png */,
+				E5D6CEF61806169D009AF9B8 /* windy100@2x.png */,
+				E5D6CE0D1804A5A4009AF9B8 /* cta100x100@2x.png */,
+				E5D6CE17180509F3009AF9B8 /* cta25x25BW@2x.png */,
+				E5D6CE0818049BD4009AF9B8 /* cta25x25@2x.png */,
+				E5D6CE121804C550009AF9B8 /* cta25x25Green@2x.png */,
+				E5D6CDE4180480C4009AF9B8 /* Images.xcassets */,
+				E5D6CDD3180480C4009AF9B8 /* Supporting Files */,
+			);
+			path = MMBusStop;
+			sourceTree = "<group>";
+		};
+		E5D6CDD3180480C4009AF9B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDD4180480C4009AF9B8 /* MMBusStop-Info.plist */,
+				E5D6CDD5180480C4009AF9B8 /* InfoPlist.strings */,
+				E5D6CDD8180480C4009AF9B8 /* main.m */,
+				E5D6CDDA180480C4009AF9B8 /* MMBusStop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5D6CDF1180480C4009AF9B8 /* MMBusStopTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDF7180480C4009AF9B8 /* MMBusStopTests.m */,
+				E5D6CDF2180480C4009AF9B8 /* Supporting Files */,
+			);
+			path = MMBusStopTests;
+			sourceTree = "<group>";
+		};
+		E5D6CDF2180480C4009AF9B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6CDF3180480C4009AF9B8 /* MMBusStopTests-Info.plist */,
+				E5D6CDF4180480C4009AF9B8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5D6CDC8180480C4009AF9B8 /* MMBusStop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D6CDFB180480C4009AF9B8 /* Build configuration list for PBXNativeTarget "MMBusStop" */;
+			buildPhases = (
+				E5D6CDC5180480C4009AF9B8 /* Sources */,
+				E5D6CDC6180480C4009AF9B8 /* Frameworks */,
+				E5D6CDC7180480C4009AF9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMBusStop;
+			productName = MMBusStop;
+			productReference = E5D6CDC9180480C4009AF9B8 /* MMBusStop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5D6CDE9180480C4009AF9B8 /* MMBusStopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D6CDFE180480C4009AF9B8 /* Build configuration list for PBXNativeTarget "MMBusStopTests" */;
+			buildPhases = (
+				E5D6CDE6180480C4009AF9B8 /* Sources */,
+				E5D6CDE7180480C4009AF9B8 /* Frameworks */,
+				E5D6CDE8180480C4009AF9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5D6CDF0180480C4009AF9B8 /* PBXTargetDependency */,
+			);
+			name = MMBusStopTests;
+			productName = MMBusStopTests;
+			productReference = E5D6CDEA180480C4009AF9B8 /* MMBusStopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5D6CDC1180480C4009AF9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kyle Mai";
+				TargetAttributes = {
+					E5D6CDE9180480C4009AF9B8 = {
+						TestTargetID = E5D6CDC8180480C4009AF9B8;
+					};
+				};
+			};
+			buildConfigurationList = E5D6CDC4180480C4009AF9B8 /* Build configuration list for PBXProject "MMBusStop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5D6CDC0180480C4009AF9B8;
+			productRefGroup = E5D6CDCA180480C4009AF9B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5D6CDC8180480C4009AF9B8 /* MMBusStop */,
+				E5D6CDE9180480C4009AF9B8 /* MMBusStopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5D6CDC7180480C4009AF9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CE0E1804A5A4009AF9B8 /* cta100x100@2x.png in Resources */,
+				E5D6CEFF18062C52009AF9B8 /* cloud1.png in Resources */,
+				E5D6CDE5180480C4009AF9B8 /* Images.xcassets in Resources */,
+				E5D6CE131804C550009AF9B8 /* cta25x25Green@2x.png in Resources */,
+				E5D6CEF81806169D009AF9B8 /* rainy100@2x.png in Resources */,
+				E5D6CEF91806169D009AF9B8 /* sunny100@2x.png in Resources */,
+				E5D6CDD7180480C4009AF9B8 /* InfoPlist.strings in Resources */,
+				E5D6CEFA1806169D009AF9B8 /* windy100@2x.png in Resources */,
+				E5D6CE0918049BD4009AF9B8 /* cta25x25@2x.png in Resources */,
+				E5D6CDE0180480C4009AF9B8 /* Main.storyboard in Resources */,
+				E5D6CEF71806169D009AF9B8 /* cloudy100@2x.png in Resources */,
+				E5D6CE18180509F3009AF9B8 /* cta25x25BW@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D6CDE8180480C4009AF9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CDF6180480C4009AF9B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5D6CDC5180480C4009AF9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CDDD180480C4009AF9B8 /* MMAppDelegate.m in Sources */,
+				E5D6CDE3180480C4009AF9B8 /* MMViewController.m in Sources */,
+				E5D6CE111804AD5C009AF9B8 /* MMCustomPointAnnotation.m in Sources */,
+				E5D6CE0C1804A272009AF9B8 /* MMDetailViewController.m in Sources */,
+				E5D6CDD9180480C4009AF9B8 /* main.m in Sources */,
+				E5D6CEFD18061C1A009AF9B8 /* UIImage+WeatherIcon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D6CDE6180480C4009AF9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D6CDF8180480C4009AF9B8 /* MMBusStopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5D6CDF0180480C4009AF9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5D6CDC8180480C4009AF9B8 /* MMBusStop */;
+			targetProxy = E5D6CDEF180480C4009AF9B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5D6CDD5180480C4009AF9B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5D6CDD6180480C4009AF9B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E5D6CDDE180480C4009AF9B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5D6CDDF180480C4009AF9B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5D6CDF4180480C4009AF9B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5D6CDF5180480C4009AF9B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5D6CDF9180480C4009AF9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5D6CDFA180480C4009AF9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5D6CDFC180480C4009AF9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMBusStop/MMBusStop-Prefix.pch";
+				INFOPLIST_FILE = "MMBusStop/MMBusStop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E5D6CDFD180480C4009AF9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMBusStop/MMBusStop-Prefix.pch";
+				INFOPLIST_FILE = "MMBusStop/MMBusStop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E5D6CDFF180480C4009AF9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMBusStop.app/MMBusStop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMBusStop/MMBusStop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MMBusStopTests/MMBusStopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E5D6CE00180480C4009AF9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMBusStop.app/MMBusStop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMBusStop/MMBusStop-Prefix.pch";
+				INFOPLIST_FILE = "MMBusStopTests/MMBusStopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5D6CDC4180480C4009AF9B8 /* Build configuration list for PBXProject "MMBusStop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D6CDF9180480C4009AF9B8 /* Debug */,
+				E5D6CDFA180480C4009AF9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D6CDFB180480C4009AF9B8 /* Build configuration list for PBXNativeTarget "MMBusStop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D6CDFC180480C4009AF9B8 /* Debug */,
+				E5D6CDFD180480C4009AF9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D6CDFE180480C4009AF9B8 /* Build configuration list for PBXNativeTarget "MMBusStopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D6CDFF180480C4009AF9B8 /* Debug */,
+				E5D6CE00180480C4009AF9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5D6CDC1180480C4009AF9B8 /* Project object */;
+}
